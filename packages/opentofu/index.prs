@@ -1,0 +1,32 @@
+@meta {
+  id: "opentofu"
+  syntax: "1.0.0"
+  description: "Infrastructure as Code with OpenTofu"
+}
+
+@standards {
+  tooling: [
+    "Always use 'tofu' command instead of 'terraform'",
+    "OpenTofu is the open-source fork of Terraform",
+    "Commands: tofu init, tofu plan, tofu apply"
+  ]
+  practices: [
+    "ALWAYS provision infrastructure using OpenTofu",
+    "NEVER create infrastructure resources manually",
+    "All infrastructure changes must be defined in .tf files",
+    "Manual changes create drift and make infrastructure unreproducible"
+  ]
+}
+
+@restrictions {
+  - "Never use 'terraform' command - use 'tofu' instead"
+  - "Never make manual infrastructure changes via CLI or console"
+  - "Never skip tofu plan before tofu apply"
+}
+
+@identity {
+  """
+  Use OpenTofu (not Terraform) for all infrastructure as code.
+  Never make manual changes - everything goes through .tf files.
+  """
+}

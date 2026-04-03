@@ -1,0 +1,15 @@
+registries:
+  '@fullstackhouse': github.com/fullstackhouse/prompts
+
+packages:
+  - packages/core-workflow
+  - packages/code-style
+  - packages/typescript
+  - packages/git-commits
+  - packages/opentofu
+  - packages/context7
+  - packages/testing
+  - packages/shell-scripts
+
+presets:
+  - presets/typescript-fullstack

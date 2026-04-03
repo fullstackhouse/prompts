@@ -1,0 +1,39 @@
+@meta {
+  id: "testing"
+  syntax: "1.0.0"
+  description: "Testing best practices"
+}
+
+@standards {
+  general: [
+    "ALWAYS run related tests after modifying code",
+    "Check for .test.ts files in same directory or feature module",
+    "Include tests for any new features or significant changes",
+    "Cover both happy paths and edge cases"
+  ]
+  style: [
+    "Prefer integration tests over unit tests",
+    "Mock as little as possible - prefer real implementations",
+    "Tests must NOT contain conditionals (if/else)",
+    "Each test should have deterministic flow",
+    "Write separate test cases for different scenarios"
+  ]
+  verification: [
+    "Run tests before marking task complete",
+    "Fix failing tests before committing",
+    "Don't skip tests even if commands are slow"
+  ]
+}
+
+@restrictions {
+  - "Never skip running tests after code changes"
+  - "Never use conditionals inside test cases"
+  - "Never commit with failing tests"
+}
+
+@identity {
+  """
+  Always run tests after changes. Prefer integration over unit tests.
+  Keep tests deterministic with no conditionals.
+  """
+}

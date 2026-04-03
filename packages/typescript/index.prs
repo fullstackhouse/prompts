@@ -1,0 +1,27 @@
+@meta {
+  id: "typescript"
+  syntax: "1.0.0"
+  description: "TypeScript best practices"
+}
+
+@standards {
+  typing: [
+    "NEVER use 'as any' type assertions",
+    "Use proper typing instead of any",
+    "Prefer 'unknown' when type is truly unknown",
+    "Use proper type annotations for function parameters and return values",
+    "Skip type annotations when TS can infer them (e.g., .map/.filter callbacks)"
+  ]
+}
+
+@restrictions {
+  - "Never use 'any' type - always use proper typing"
+  - "Never use 'as any' assertions"
+}
+
+@identity {
+  """
+  Write type-safe TypeScript. Never use 'any' - use proper types, generics,
+  or 'unknown' when truly needed. Let TypeScript infer where possible.
+  """
+}

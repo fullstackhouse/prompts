@@ -1,0 +1,49 @@
+@meta {
+  id: "code-style"
+  syntax: "1.0.0"
+  description: "Clean code practices and style guidelines"
+}
+
+@standards {
+  clean-code: [
+    "Follow Single Responsibility Principle",
+    "Keep functions small and focused on one task",
+    "Self-documenting code with meaningful names",
+    "Early return pattern to reduce nesting",
+    "Extract complex logic into well-named functions",
+    "Don't extract very short, self-explanatory implementations to functions"
+  ]
+  avoid-restatement: [
+    "Don't create functions whose body just repeats the name",
+    "Either add meaningful logic or call underlying method directly"
+  ]
+  comments: [
+    "NO COMMENTS RULE: Extract code to descriptive function instead",
+    "NEVER write obvious comments that restate what code does",
+    "ONLY acceptable: Complex business rules or non-obvious algorithmic decisions",
+    "Method and variable names should tell the story",
+    "EXCEPTION: Add concise JSDoc for exported functions/classes meant for reuse"
+  ]
+  control-flow: [
+    "Use early-return (if-guard) pattern to reduce nesting",
+    "Prefer guard clauses over nested if-else statements",
+    "Return early from functions when conditions are not met"
+  ]
+  error-handling: [
+    "Avoid unnecessary try-catch blocks - let errors propagate naturally",
+    "Don't catch errors just to throw a different message if original is clear",
+    "Only wrap in try-catch when you need to: transform error type, add significant context, or handle specific cases differently"
+  ]
+}
+
+@restrictions {
+  - "Never write single-line comments"
+  - "Never add comments like '// Create user' before new UserFactory().create()"
+}
+
+@identity {
+  """
+  Write clean, self-documenting code. Avoid comments - let names tell the story.
+  Keep functions small, use guard clauses, and don't over-engineer.
+  """
+}

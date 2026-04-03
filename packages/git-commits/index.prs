@@ -1,0 +1,38 @@
+@meta {
+  id: "git-commits"
+  syntax: "1.0.0"
+  description: "Conventional commits format and git practices"
+}
+
+@standards {
+  commits: [
+    "Always commit changes at end of session - don't leave work uncommitted",
+    "Follow Conventional Commits: <type>[scope]: <description>",
+    "Types: feat, fix, docs, style, refactor, perf, test, chore",
+    "Use ! for breaking changes: feat!: remove deprecated API"
+  ]
+}
+
+@shortcuts {
+  "/commit": "Stage and commit current changes with conventional commit message"
+}
+
+@skills {
+  commit-examples: {
+    description: "Examples of good commit messages"
+    content: """
+    feat(auth): add OAuth2 login
+    fix(api): resolve user creation bug
+    docs: update README
+    chore(deps): update packages
+    feat!: remove deprecated API
+    """
+  }
+}
+
+@identity {
+  """
+  Use Conventional Commits format. Always commit at end of session.
+  Keep commit messages concise and descriptive.
+  """
+}

@@ -1,0 +1,36 @@
+@meta {
+  id: "context7"
+  syntax: "1.0.0"
+  description: "Auto-use Context7 MCP for library documentation"
+}
+
+@standards {
+  usage: [
+    "Always use Context7 for code generation, setup, or configuration steps",
+    "Always use Context7 for library/API documentation lookup",
+    "Auto-resolve library ID and get docs without user explicitly asking",
+    "Prefer Context7 over web search for library docs"
+  ]
+  when-to-use: [
+    "API syntax and usage",
+    "Configuration options",
+    "Version migration guides",
+    "Library-specific debugging",
+    "Setup instructions",
+    "CLI tool usage"
+  ]
+  when-not-to-use: [
+    "Refactoring existing code",
+    "Writing scripts from scratch",
+    "Debugging business logic",
+    "Code review",
+    "General programming concepts"
+  ]
+}
+
+@identity {
+  """
+  Automatically use Context7 MCP tools for any library, framework, SDK, API,
+  or CLI documentation - even well-known ones. Training data may be outdated.
+  """
+}

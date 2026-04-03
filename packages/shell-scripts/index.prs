@@ -1,0 +1,31 @@
+@meta {
+  id: "shell-scripts"
+  syntax: "1.0.0"
+  description: "Shell script best practices"
+}
+
+@standards {
+  bash: [
+    "Always include set flags at beginning: set -euo pipefail",
+    "Use shebang: #!/bin/bash"
+  ]
+}
+
+@skills {
+  bash-template: {
+    description: "Standard bash script template"
+    content: """
+    #!/bin/bash
+    set -euo pipefail
+
+    # Script content here
+    """
+  }
+}
+
+@identity {
+  """
+  Write safe shell scripts with proper error handling.
+  Always use set -euo pipefail.
+  """
+}
