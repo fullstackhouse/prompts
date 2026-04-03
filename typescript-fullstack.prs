@@ -4,12 +4,12 @@
   description: "Complete preset for TypeScript fullstack development"
 }
 
-@use @fullstackhouse/core-workflow
-@use @fullstackhouse/code-style
-@use @fullstackhouse/typescript
-@use @fullstackhouse/git-commits
-@use @fullstackhouse/testing
-@use @fullstackhouse/context7
+@use ./core-workflow
+@use ./code-style
+@use ./typescript
+@use ./git-commits
+@use ./testing
+@use ./context7
 
 @standards {
   general: [

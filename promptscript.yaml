@@ -1,15 +1,6 @@
-registries:
-  '@fullstackhouse': github.com/fullstackhouse/prompts
+id: fullstackhouse-prompts
+syntax: "1.2.0"
+description: "Reusable AI agent instructions for Full Stack House projects"
 
-packages:
-  - packages/core-workflow
-  - packages/code-style
-  - packages/typescript
-  - packages/git-commits
-  - packages/opentofu
-  - packages/context7
-  - packages/testing
-  - packages/shell-scripts
-
-presets:
-  - presets/typescript-fullstack
+targets:
+  - claude
